@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\SOFTWARES\sts-bundle\sts-3.9.5.RELEASE\WebApps\.metadata\.plugins\org.eclipse.jdt.core
+636160177.index
+2380175872.index
