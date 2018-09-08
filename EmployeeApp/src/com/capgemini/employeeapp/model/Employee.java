@@ -3,39 +3,53 @@ package com.capgemini.employeeapp.model;
 public class Employee {
 	private int employeeId;
 	private String employeeName;
-	private double employeesalary;
+	private double employeeSalary;
 	private String employeeDepartment;
-	public Employee(int employeeId, String employeeName, double employeesalary, String employeeDepartment) {
+
+	public Employee(int employeeId, String employeeName, double employeeSalary, String employeeDepartment) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
-		this.employeesalary = employeesalary;
+		this.employeeSalary = employeeSalary;
 		this.employeeDepartment = employeeDepartment;
 	}
+
 	public int getEmployeeId() {
 		return employeeId;
 	}
+
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
+
 	public String getEmployeeName() {
 		return employeeName;
 	}
+
 	public void setEmployeeName(String employeeName) {
 		this.employeeName = employeeName;
 	}
-	public double getEmployeesalary() {
-		return employeesalary;
+
+	public double getEmployeeSalary() {
+		return employeeSalary;
 	}
-	public void setEmployeesalary(double employeesalary) {
-		this.employeesalary = employeesalary;
+
+	public void setEmployeeSalary(double employeeSalary) {
+		this.employeeSalary = employeeSalary;
 	}
+
 	public String getEmployeeDepartment() {
 		return employeeDepartment;
 	}
+
 	public void setEmployeeDepartment(String employeeDepartment) {
 		this.employeeDepartment = employeeDepartment;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeesalary="
+				+ employeeSalary + ", employeeDepartment=" + employeeDepartment + "]";
+	}
 
 }
